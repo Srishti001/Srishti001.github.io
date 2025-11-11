@@ -1,0 +1,33 @@
+:root{
+  --accent:#0a66c2;
+  --bg:#ffffff;
+  --muted:#666;
+  --card:#f8fafc;
+  --maxw:980px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:#111;background:var(--bg);line-height:1.5}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+.hero{background:linear-gradient(180deg,#f2f6fb,#ffffff);padding:32px 0;border-bottom:1px solid #e6e9ef}
+.hero .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between}
+.left{flex:1}
+h1{font-size:32px;margin:0 0 6px}
+.role{margin:0;color:#222;font-weight:600}
+.tag{margin:8px 0 14px;color:var(--muted)}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.outline{background:transparent;color:var(--accent);border:1px solid #dbe9ff}
+.right{text-align:right}
+.avatar{width:110px;height:110px;border-radius:12px;background:linear-gradient(180deg,#e6f0ff,#cfe3ff);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:30px;color:var(--accent)}
+.contact{margin-top:12px;color:var(--muted);font-size:14px}
+main{padding:26px 0}
+.card{background:var(--card);padding:18px;border-radius:10px;margin-bottom:18px}
+.project{margin-bottom:16px}
+.meta{color:var(--muted);margin-bottom:8px}
+.links a{color:var(--accent);text-decoration:none}
+.muted{text-align:center;color:var(--muted);margin:18px 0}
+@media (max-width:700px){
+  .hero .wrap{flex-direction:column;align-items:flex-start}
+  .right{text-align:left;margin-top:12px}
+}
